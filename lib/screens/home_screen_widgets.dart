@@ -86,18 +86,30 @@ class HomeScreenWidgets {
                 Row(
                   children: [
                     displayWeatherDetails(
-                        'assets/11.png', 'Sunrise', 'DateFormat().add_jm().format(state.weather.sunrise!).toString()'),
+                      'assets/11.png',
+                      'Sunrise',
+                      DateFormat().add_jm().format(state.weather.sunrise!).toString(),
+                    ),
                     displayWeatherDetails(
-                        'assets/12.png', 'Sunset', 'DateFormat().add_jm().format(state.weather.sunset!).toString()'),
+                      'assets/12.png',
+                      'Sunset',
+                      DateFormat().add_jm().format(state.weather.sunset!).toString(),
+                    ),
                   ],
                 ),
                 displayDivider(),
                 Row(
                   children: [
                     displayWeatherDetails(
-                        'assets/14.png', 'Temp Min', 'state.weather.tempMin!.celsius!.round( )'),
+                      'assets/14.png',
+                      'Temp Min',
+                      '${state.weather.tempMin!.celsius!.round()}°C',
+                    ),
                     displayWeatherDetails(
-                        'assets/14.png', 'Temp Max', 'state.weather.tempMax!.celsius!.round( )'),
+                      'assets/14.png',
+                      'Temp Max',
+                      '${state.weather.tempMax!.celsius!.round()}°C',
+                    ),
                   ],
                 ),
               ],
