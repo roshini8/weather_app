@@ -47,7 +47,7 @@ class HomeScreenWidgets {
 
   Widget displayCurrentLocation(String ?currentLocation) {
     return Text(
-              '${currentLocation}',
+              '📍 ${currentLocation}',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w300,
